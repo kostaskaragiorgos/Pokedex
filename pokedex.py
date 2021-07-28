@@ -29,8 +29,11 @@ class Pokedex():
         self.pokemontext = Text(self.master, height=1, width=10)
         self.pokemontext.pack()
 
-        self.findbutton = Button(self.master, text="FIND")
+        self.findbutton = Button(self.master, text="FIND", command=self.findpokemon())
         self.findbutton.pack()
+
+        self.clearbutton = Button(self.master, text="CLEAR", command=self.clearname())
+        self.clearbutton.pack()
 
         self.menu = Menu(self.master)
         
@@ -47,6 +50,11 @@ class Pokedex():
         self.master.bind('<Control-F1>', lambda event: helpmenu())
         self.master.bind('<Control-i>', lambda event: aboutmenu())
 
+    
+    def clearname(self):
+        pass
+    def findpokemon(self):
+        pass
 
     def exitmenu(self):
         """exit menu function"""
