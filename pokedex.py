@@ -1,4 +1,5 @@
 """ Csv File Spliter"""
+from os import error, sep
 from tkinter import Menu, Button, messagebox as msg, Tk, Label
 from tkinter import filedialog, Text, IntVar, Checkbutton
 from tkinter.constants import END
@@ -15,13 +16,19 @@ def aboutmenu():
     """about menu function"""
     msg.showinfo("About", "POKEDEX\nVersion 1.0")
 
+def loaddataset(filename):
+    return pd.read_csv(filename)
 
+FILENAME = "pokedex.csv"
 class Pokedex():
     def __init__(self, master):
         self.master = master
         self.master.title("POKEDEX")
         self.master.geometry("250x250")
         self.master.resizable(False, False)
+        self.df = ""
+        self.df = loaddataset(FILENAME)
+
 
         self.pokemonnamelab = Label(self.master, text="Enter the name of the pokemon")
         self.pokemonnamelab.pack()
