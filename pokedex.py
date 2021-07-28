@@ -23,6 +23,12 @@ class Pokedex():
         self.master.geometry("250x250")
         self.master.resizable(False, False)
 
+        self.pokemonnamelab = Label(self.master, text="Enter the name of the pokemon")
+        self.pokemonnamelab.pack()
+
+        self.pokemontext = Text(self.master, height=1, width=10)
+        self.pokemontext.pack()
+
         self.findbutton = Button(self.master, text="FIND")
         self.findbutton.pack()
 
