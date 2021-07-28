@@ -23,6 +23,9 @@ class Pokedex():
         self.master.geometry("250x250")
         self.master.resizable(False, False)
 
+        self.findbutton = Button(self.master, text="FIND")
+        self.findbutton.pack()
+
         self.menu = Menu(self.master)
         
         
