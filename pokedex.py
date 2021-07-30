@@ -79,6 +79,7 @@ class Pokedex():
 
 
     def showprepok(self):
+        """ shows the info of the previous searched pokemon"""
         if self.prepok is None:
             msg.showerror("ERROR", "NO POKEMON TO SHOW")
         else:
