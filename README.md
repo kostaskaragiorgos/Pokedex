@@ -69,7 +69,7 @@ All project documentation is located in the `./doc`  folder.
 
 ### Radon_mi
 
-
+<p><img src ="images/pokedex radon mi.png" title = "Pokedex Radon mi"/> </p>
 
 ### Radon_raw
 
