@@ -76,6 +76,8 @@ class Pokedex():
         ans = self.df.loc[self.df['name']==self.pokemontext.get("1.0","end-1c")]
         if ans.empty:
             msg.showerror("ERRROR", "THERE IS NO " + self.pokemontext.get("1.0","end-1c") + " POKEMON")
+        else:
+            msg.showinfo("POKEMON " + self.pokemontext.get("1.0","end-1c") , str(ans))
 
 
     def exitmenu(self):
