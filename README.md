@@ -73,6 +73,8 @@ All project documentation is located in the `./doc`  folder.
 
 ### Radon_raw
 
+<p><img src ="images/pokedex radon raw.png" title = "Pokedex Radon raw"/> </p>
+
 
 ## Keybinds
 
