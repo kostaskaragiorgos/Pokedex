@@ -54,7 +54,7 @@ class Pokedex():
         self.menu.add_cascade(label="Edit", menu=self.edit_menu)
 
         self.show_menu = Menu(self.menu, tearoff=0)
-        self.show_menu.add_command(label="Show Previous Pokemon", command=self.showprepok)
+        self.show_menu.add_command(label="Show Previous Pokemon", accelerator='Ctrl+F5', command=self.showprepok)
         self.menu.add_cascade(label="Show", menu=self.show_menu)
         
         
@@ -69,6 +69,7 @@ class Pokedex():
         self.master.config(menu=self.menu)
         self.master.bind('<Alt-F4>', lambda event: self.exitmenu())
         self.master.bind('<Control-n>', lambda event: self.clearname())
+        self.master.bind('<Control-F5>', lambda event: self.showprepok())
         self.master.bind('<Control-F1>', lambda event: helpmenu())
         self.master.bind('<Control-i>', lambda event: aboutmenu())
 
