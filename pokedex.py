@@ -45,7 +45,7 @@ class Pokedex():
         self.menu = Menu(self.master)
 
         self.file_menu = Menu(self.menu, tearoff=0)
-        self.file_menu.add_command(label="Exit", accelerator='Ctrl+F4', command=self.exit)
+        self.file_menu.add_command(label="Exit", accelerator='Ctrl+F4', command=self.exitmenu)
         self.menu.add_cascade(label="File", menu=self.file_menu)
 
         self.edit_menu = Menu(self.menu, tearoff=0)
