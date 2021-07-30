@@ -1,8 +1,8 @@
 """ Csv File Spliter"""
 from os import error, sep
-from tkinter import Menu, Button, messagebox as msg, Tk, Label
+from tkinter import Menu, Button, messagebox as msg, Tk, Label , END
 from tkinter import filedialog, Text, IntVar, Checkbutton
-from tkinter.constants import END
+
 
 import pandas as pd
 
@@ -73,7 +73,10 @@ class Pokedex():
 
 
     def findpokemon(self):
-        pass
+        ans = self.df.loc[self.df['name']==self.pokemontext.get("1.0","end-1c")]
+        if ans.empty:
+            msg.showerror("ERRROR", "THERE IS NO " + self.pokemontext.get("1.0","end-1c") + " POKEMON")
+
 
     def exitmenu(self):
         """exit menu function"""
