@@ -44,6 +44,10 @@ class Pokedex():
 
         self.menu = Menu(self.master)
 
+        self.file_menu = Menu(self.menu, tearoff=0)
+        self.file_menu.add_command(label="Exit", accelerator='Ctrl+F4', command=self.exit)
+        self.menu.add_cascade(label="File", menu=self.file_menu)
+
         self.edit_menu = Menu(self.menu, tearoff=0)
         self.edit_menu.add_command(label="Clear Pokemon Name", accelerator='Ctrl+N', command=self.clearname)
         self.menu.add_cascade(label="Edit", menu=self.edit_menu)
