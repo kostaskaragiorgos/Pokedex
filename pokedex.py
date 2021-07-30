@@ -27,7 +27,7 @@ class Pokedex():
         self.master.geometry("250x250")
         self.master.resizable(False, False)
         self.df = ""
-        self.prepok = ""
+        self.prepok = None
         self.df = loaddataset(FILENAME)
 
 
@@ -52,6 +52,10 @@ class Pokedex():
         self.edit_menu = Menu(self.menu, tearoff=0)
         self.edit_menu.add_command(label="Clear Pokemon Name", accelerator='Ctrl+N', command=self.clearname)
         self.menu.add_cascade(label="Edit", menu=self.edit_menu)
+
+        self.show_menu = Menu(self.menu, tearoff=0)
+        self.show_menu.add_command(label="Show Previous Pokemon", command=self.showprepok)
+        self.menu.add_cascade(label="Show", menu=self.show_menu)
         
         
         self.about_menu = Menu(self.menu, tearoff=0)
@@ -74,7 +78,7 @@ class Pokedex():
 
 
     def showprepok(self):
-        if self.prepok == "":
+        if self.prepok is None:
             msg.showerror("ERROR", "NO POKEMON TO SHOW")
         else:
             msg.showinfo("POKEMON", str(self.prepok))
