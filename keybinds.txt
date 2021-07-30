@@ -6,6 +6,10 @@ Edit menu
 ==========================
 Clear pokemon name Ctrl+N
 ==========================
+Show menu
+=============================
+Show Previous Pokemon Ctrl+F5
+=============================
 About menu
 ============
 About Ctrl+I
