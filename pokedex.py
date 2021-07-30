@@ -27,6 +27,7 @@ class Pokedex():
         self.master.geometry("250x250")
         self.master.resizable(False, False)
         self.df = ""
+        self.prepok = ""
         self.df = loaddataset(FILENAME)
 
 
@@ -72,12 +73,19 @@ class Pokedex():
         self.pokemontext.delete(1.0, END)
 
 
+    def showprepok(self):
+        if self.prepok == "":
+            msg.showerror("ERROR", "NO POKEMON TO SHOW")
+        else:
+            msg.showinfo("POKEMON", str(self.prepok))
+
     def findpokemon(self):
         ans = self.df.loc[self.df['name']==self.pokemontext.get("1.0","end-1c")]
         if ans.empty:
             msg.showerror("ERRROR", "THERE IS NO " + self.pokemontext.get("1.0","end-1c") + " POKEMON")
         else:
             msg.showinfo("POKEMON " + self.pokemontext.get("1.0","end-1c") , str(ans))
+            self.prepok = ans
 
 
     def exitmenu(self):
