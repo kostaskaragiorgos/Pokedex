@@ -61,7 +61,7 @@ All project documentation is located in the `./doc`  folder.
 
 ### Radon_cc
 
-
+<p><img src ="images/pokedex radon cc.png" title = "Pokedex Radon cc"/> </p>
 
 ### Radon_hal
 
