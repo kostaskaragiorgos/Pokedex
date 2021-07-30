@@ -1,7 +1,6 @@
 """ Csv File Spliter"""
-from os import error, sep
-from tkinter import Menu, Button, messagebox as msg, Tk, Label , END
-from tkinter import filedialog, Text, IntVar, Checkbutton
+from tkinter import Menu, Button, messagebox as msg, Tk, Label, END
+from tkinter import Text
 
 
 import pandas as pd
@@ -9,8 +8,7 @@ import pandas as pd
 
 def helpmenu():
     """help menu function"""
-    pass
-
+    msg.showinfo("HELP", " ENTER THE NAME OF A POKEMON AND FIND INFO ABOUT IT")
     
 def aboutmenu():
     """about menu function"""
