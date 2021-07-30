@@ -45,7 +45,7 @@ class Pokedex():
         self.menu = Menu(self.master)
 
         self.file_menu = Menu(self.menu, tearoff=0)
-        self.file_menu.add_command(label="Exit", accelerator='Ctrl+F4', command=self.exitmenu)
+        self.file_menu.add_command(label="Exit", accelerator='Alt+F4', command=self.exitmenu)
         self.menu.add_cascade(label="File", menu=self.file_menu)
 
         self.edit_menu = Menu(self.menu, tearoff=0)
@@ -62,6 +62,7 @@ class Pokedex():
         self.menu.add_cascade(label="Help", menu=self.help_menu)
         
         self.master.config(menu=self.menu)
+        self.master.bind('<Alt-F4>', lambda event: self.exitmenu())
         self.master.bind('<Control-n>', lambda event: self.clearname())
         self.master.bind('<Control-F1>', lambda event: helpmenu())
         self.master.bind('<Control-i>', lambda event: aboutmenu())
