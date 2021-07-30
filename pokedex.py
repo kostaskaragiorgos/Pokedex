@@ -45,7 +45,7 @@ class Pokedex():
         self.menu = Menu(self.master)
 
         self.edit_menu = Menu(self.menu, tearoff=0)
-        self.edit_menu.add_command(label="Clear Pokemon Name", accelerator='Ctrl+N', command=self.clearname())
+        self.edit_menu.add_command(label="Clear Pokemon Name", accelerator='Ctrl+N', command=self.clearname)
         self.menu.add_cascade(label="Edit", menu=self.edit_menu)
         
         
@@ -58,7 +58,7 @@ class Pokedex():
         self.menu.add_cascade(label="Help", menu=self.help_menu)
         
         self.master.config(menu=self.menu)
-        
+        self.master.bind('<Control-n>', lambda event: self.clearname())
         self.master.bind('<Control-F1>', lambda event: helpmenu())
         self.master.bind('<Control-i>', lambda event: aboutmenu())
 
