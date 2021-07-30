@@ -36,10 +36,10 @@ class Pokedex():
         self.pokemontext = Text(self.master, height=1, width=10)
         self.pokemontext.pack()
 
-        self.findbutton = Button(self.master, text="FIND", command=self.findpokemon())
+        self.findbutton = Button(self.master, text="FIND", command=self.findpokemon)
         self.findbutton.pack()
 
-        self.clearbutton = Button(self.master, text="CLEAR", command=self.clearname())
+        self.clearbutton = Button(self.master, text="CLEAR", command=self.clearname)
         self.clearbutton.pack()
 
         self.menu = Menu(self.master)
@@ -59,7 +59,9 @@ class Pokedex():
 
     
     def clearname(self):
-        pass
+        self.pokemontext.delete(1.0, END)
+
+
     def findpokemon(self):
         pass
 
