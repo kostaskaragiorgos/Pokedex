@@ -75,6 +75,7 @@ class Pokedex():
 
     
     def clearname(self):
+        """clears the pokemon name text field"""
         self.pokemontext.delete(1.0, END)
 
 
