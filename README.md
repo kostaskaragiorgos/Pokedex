@@ -50,6 +50,8 @@ pip install -r requirements.txt
 
 ## Current_Version
 
+<p><img src ="images/pokedex version.png" title = "Pokedex Version"/> </p>
+
 
 ## Documentation
 
