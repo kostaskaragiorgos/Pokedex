@@ -2,7 +2,12 @@
 
 # FILE MENU
 
+## EXIT
 
+
+You can close the app using menu File --> Exit or using Alt+F4 keybind
+
+<p><img src = "file/exit menu.png" title="Close app">
 
 # EDIT
 
