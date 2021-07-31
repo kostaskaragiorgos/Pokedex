@@ -24,3 +24,6 @@ An informative message pops up
 
 # Help menu
 
+You can show info about the app by using menu Help --> Help or using Alt+F1 keybind
+
+<p><img src="help/help menu.png" title="help menu"/></p>
