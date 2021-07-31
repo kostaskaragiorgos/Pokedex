@@ -17,6 +17,11 @@ You press ok to close the app or cancel if you don't want
 
 # EDIT
 
+## Clear Pokemon Name
+
+You can clear the pokemon name text field by using Edit --> Clear Pokemon Name or by using Ctrl + N keybind
+
+<p><img src ="edit/clear pokemon name menu.png" title="clear pokemon game menu"/> </p>
 
 
 # SHOW
