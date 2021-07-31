@@ -79,6 +79,7 @@ All project documentation is located in the `./doc`  folder.
 ## Keybinds
 
 <ul>
+  <li> Find Ctrl+T </li>
   <li> Exit Alt+F4 </li>
   <li> Clear Pokemon Name Ctrl+N </li>
   <li> Show Previous Pokemon Ctrl+F5 </li>
