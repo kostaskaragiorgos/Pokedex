@@ -1,5 +1,6 @@
 File menu
 ============
+Find Ctrl+T
 Exit Alt+F4
 ============
 Edit menu
