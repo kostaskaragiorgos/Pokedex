@@ -14,7 +14,9 @@
 
 # About menu
 
+You can show info about the app by using menu About --> About or using Ctrl+i keybind
 
+<p><img src="about/about menu.png" title="about menu"/></p>
 
 # Help menu
 
