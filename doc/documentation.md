@@ -30,6 +30,10 @@ You can show info about the previous searched pokemon by using menu Show --> Sho
 
 <p><img src="show/show previous pokemon menu.png" title="show previous pokemon menu"/></p>
 
+if there is no pokemon to show an error window pops up
+
+<p><img src="show/show previous pokemon error.png" title="show previous pokemon error"/></p>
+
 # About menu
 
 You can show info about the app by using menu About --> About or using Ctrl+i keybind
