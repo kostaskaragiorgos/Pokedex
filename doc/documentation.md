@@ -4,16 +4,16 @@
 
 You can find info about the pokemon you desire by using menu File --> Find or using the Ctrl + T keybind
 
-<p><img src = "file/find menu.png" title="Find menu">
+<p><img src = "file/find menu.png" title="Find menu"></p>
 
 if the pokomon does not exist an error message window pops up
 
 
-<p><img src = "file/find error.png" title="find menu  error">
+<p><img src = "file/find error.png" title="find menu  error"></p>
 
 else an informative message pops up
 
-<p><img src = "file/find menu pop up.png" title="find menu  pop up">
+<p><img src = "file/find menu pop up.png" title="find menu  pop up"></p>
 
 
 ## EXIT
@@ -21,7 +21,7 @@ else an informative message pops up
 
 You can close the app using menu File --> Exit or using Alt+F4 keybind
 
-<p><img src = "file/exit menu.png" title="Close app">
+<p><img src = "file/exit menu.png" title="Close app"></p>
 
 An informative message pops up
 
