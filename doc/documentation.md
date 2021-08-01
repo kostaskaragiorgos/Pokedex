@@ -26,7 +26,9 @@ You can clear the pokemon name text field by using Edit --> Clear Pokemon Name o
 
 # SHOW
 
+You can show info about the previous searched pokemon by using menu Show --> Show Previous Pokemon or using Ctrl+F5 keybind
 
+<p><img src="show/show previous pokemon menu.png" title="show previous pokemon menu"/></p>
 
 # About menu
 
