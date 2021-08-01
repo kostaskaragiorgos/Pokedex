@@ -2,6 +2,10 @@
 
 # FILE MENU
 
+You can find info about the pokemon you desire by using menu File --> Find or using the Ctrl + T keybind
+
+<p><img src = "file/find menu.png" title="Close app">
+
 ## EXIT
 
 
