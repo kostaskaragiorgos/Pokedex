@@ -11,6 +11,10 @@ if the pokomon does not exist an error message window pops up
 
 <p><img src = "file/find error.png" title="find menu  error">
 
+else an informative message pops up
+
+<p><img src = "file/find menu pop up.png" title="find menu  pop up">
+
 
 ## EXIT
 
